@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <button class="play-game">Play Game</button>
+    <div class="game-buttons">
+      <button class="rps-selection" id="rock">Rock</button>
+      <button class="rps-selection" id="paper">Paper</button>
+      <button class="rps-selection" id="scissors">Scissors</button>
+    </div>
+    <div class="round-description"></div>
+    <div class="scoreboard">
+      <p>Computer <span id="computer-score"></span></p>
+      <p>Human <span id="human-score"></span></p>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
