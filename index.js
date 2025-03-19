@@ -85,9 +85,6 @@ function playRound(humanChoice) {
     matchResultMessage.textContent = `Computer chose ${computerChoice} and you chose ${humanChoice}, it's a draw!`;
     appendMatchResult(matchResultMessage);
     updateScore();
-    console.log(
-      `Computer chose ${computerChoice} and you chose ${humanChoice}, it's a draw!`
-    );
   } else if (
     (computerChoice === 'rock' && humanChoice === 'scissors') ||
     (computerChoice === 'scissors' && humanChoice === 'paper') ||
@@ -97,16 +94,10 @@ function playRound(humanChoice) {
     appendMatchResult(matchResultMessage);
     computerScore++;
     updateScore();
-    console.log(
-      `Computer chose ${computerChoice} and you chose ${humanChoice}, you lose this round!`, humanScore, computerScore
-    );
   } else {
     matchResultMessage.textContent = `Computer chose ${computerChoice} and you chose ${humanChoice}, you win this round!`;
     appendMatchResult(matchResultMessage);
     humanScore++;
     updateScore();
-    console.log(
-      `Computer chose ${computerChoice} and you chose ${humanChoice}, you win this round!`, computerScore, humanScore
-    );
   }
 }
